@@ -8,8 +8,5 @@ terraform {
 }
 
 provider "google" {
-  # This configuration is intentionally left minimal.
-  # Credentials will be configured via the CI/CD pipeline using
-  # Workload Identity Federation. When running locally, authentication
   # will be handled by the gcloud CLI (run `gcloud auth application-default login`).
 }
